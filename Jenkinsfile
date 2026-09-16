@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/saaadhyaaa/agilejenkinsp3.git'
+                git branch: 'main', url: 'https://github.com/srihareeshh/AgileProject3.git'
             }
         }
         stage('Parallel Checks') {
@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Summary') {
             steps {
-                echo 'Both frontend and backend checks are complete.'
+                echo 'Both frontend and backend checks are complete'
             }
         }
     }
